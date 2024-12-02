@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>88TakeOut</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 1em 0;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        h3 {
+            color: #333;
+            margin-top: 20px;
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #007BFF;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to 88TakeOut</h1>
+        <p>Delicious Meals at Your Fingertips</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order Now</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+
+        <!-- Kashi na Farko: Mixed Rice and Chicken -->
+        <h3>Mixed Rice and Chicken</h3>
+        <ul>
+            <li>Mixed Rice and Chicken - ₦2800</li>
+            <li>Mixed with Beef - ₦1300</li>
+            <li>Mixed with Fish - ₦1800</li>
+            <li>Mixed with Panla - ₦1900</li>
+            <li>Mixed with Cowleg - ₦1800</li>
+            <li>Plain Rice - ₦1200</li>
+            <li>Extra Rice - ₦1500</li>
+        </ul>
+
+        <!-- Kashi na Biyu: Extra -->
+        <h3>Extra</h3>
+        <ul>
+            <li>Goat Meat - ₦600</li>
+            <li>Assorted - ₦300</li>
+            <li>Beef - ₦100</li>
+            <li>Fish - ₦600</li>
+            <li>Panla - ₦700</li>
+            <li>Ponmo - ₦200</li>
+            <li>Moimoi - ₦500</li>
+            <li>Cowleg - ₦600</li>
+            <li>Chicken - ₦1600</li>
+        </ul>
+
+        <!-- Kashi na Uku: Shawarma -->
+        <h3>Shawarma</h3>
+        <ul>
+            <li>Beef Shawarma - ₦2000</li>
+            <li>Chicken Shawarma - ₦2300</li>
+            <li>Mixed Shawarma - ₦2500</li>
+            <li>Coleslaw - ₦250</li>
+        </ul>
+
+        <!-- Kashi na Karshe: Swallow -->
+        <h3>Swallow</h3>
+        <ul>
+            <li>Eba - ₦1300</li>
+            <li>Semo - ₦1300</li>
+            <li>Poundo - ₦1400</li>
+            <li>Amala - ₦1300</li>
+            <li>Fufu - ₦1300</li>
+        </ul>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order">
+        <h2>Order Now</h2>
+        <form>
+            <div>
+                <label for="items">Select Items</label>
+                <select id="items" name="items" multiple required>
+                    <option value="mixed_rice_chicken">Mixed Rice and Chicken - ₦2800</option>
+                    <option value="mixed_beef">Mixed with Beef - ₦1300</option>
+                    <option value="mixed_fish">Mixed with Fish - ₦1800</option>
+                    <option value="mixed_panla">Mixed with Panla - ₦1900</option>
+                    <option value="mixed_cowleg">Mixed with Cowleg - ₦1800</option>
+                    <option value="plain_rice">Plain Rice - ₦1200</option>
+                    <option value="extra_rice">Extra Rice - ₦1500</option>
+                    <option value="goat_meat">Goat Meat - ₦600</option>
+                    <option value="assorted">Assorted - ₦300</option>
+                    <option value="beef">Beef - ₦100</option>
+                    <option value="fish">Fish - ₦600</option>
+                    <option value="panla">Panla - ₦700</option>
+                    <option value="ponmo">Ponmo - ₦200</option>
+                    <option value="moimoi">Moimoi - ₦500</option>
+                    <option value="cowleg">Cowleg - ₦600</option>
+                    <option value="chicken">Chicken - ₦1600</option>
+                    <option value="beef_shawarma">Beef Shawarma - ₦2000</option>
+                    <option value="chicken_shawarma">Chicken Shawarma - ₦2300</option>
+                    <option value="mixed_shawarma">Mixed Shawarma - ₦2500</option>
+                    <option value="coleslaw">Coleslaw - ₦250</option>
+                    <option value="eba">Eba - ₦1300</option>
+                    <option value="semo">Semo - ₦1300</option>
+                    <option value="poundo">Poundo - ₦1400</option>
+                    <option value="amala">Amala - ₦1300</option>
+                    <option value="fufu">Fufu - ₦1300</option>
+                </select>
+            </div>
+            <div>
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+            <div>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="phone">WhatsApp Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="address">Delivery Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="comment">Additional Comments</label>
+                <textarea id="comment" name="comment" rows="3" placeholder="Any special request or instructions..."></textarea>
+            </div>
+            <div>
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment" required>
+                    <option value="cash">Cash on Delivery</option>
+                    <option value="card">Card Payment
+                    <option value="transfer">Bank Transfer</option>
+                </select>
+            </div>
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> +2347063854754</p>
+        <p><strong>We Are Now On Facebook, WhatsApp, Tiktok</strong></p>
+        <p><strong>Email:</strong> @88takeoutcuisine.com</p>
+        <p><strong>Address:</strong> Dan Bare Layin Mobile, New Side, Kano City, Nigeria</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 88TakeOut. All Rights Reserved,<br> Created By CryptoX Abdullahi Dahiru.</p>
+    </footer>
+</body>
+</html>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $address = $_POST['address'];
+    $comment = $_POST['comment'];
+    $payment = $_POST['payment'];
+    
+    
+    $to = "dahirua011@gmail.com.com";
+    $subject = "New Order from $name";
+    $message = "Name: $name\nPhone: $phone\nAddress: $address\nComment: $comment\nPayment Method: $payment";
+    mail($to, $subject, $message);
+    
+    echo "Order placed successfully!";
+}
+?>
+<form action="your_php_script.php" method="POST">
+    <div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <!-- Other form inputs -->
+    <button type="submit">Place Order</button>
+</form>
